@@ -1,0 +1,49 @@
+body
+{
+	margin: 0;
+	padding: 20px;
+	font: 120%/1.3 helvetica, arial, sans-serif;
+}
+
+h1, h2 { margin: 0 0 .5em; }
+p { margin: 0 0 1em; }
+code { font: 100%/1.3 courier, monospace; }
+
+table
+{
+	width: 40em;
+	border-collapse: collapse;
+}
+
+caption
+{
+	padding: 0 0 .5em;
+	font-weight: bold;
+	text-align: left;
+}
+
+th,td
+{
+	padding: .5em;
+	border: 1px solid #777;
+	font-weight: normal;
+	text-align: left;
+	vertical-align: top;
+}
+
+th { background-color: #eee; }
+
+/* exercise */
+
+
+
+
+
+
+
+
+
+
+
+
+
