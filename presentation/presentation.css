@@ -34,7 +34,20 @@ th,td
 th { background-color: #eee; }
 
 /* exercise */
+h2
+{
+	color: aqua;
+}
 
+#news
+{
+	color: black;
+}
+
+h2#news
+{
+	color: greenyellow;
+}
 
 
 
