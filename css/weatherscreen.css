@@ -49,7 +49,7 @@
 
 /* Search engine */
 .input[type=text] {
-    width: 130px;
+    width: 90px;
     -webkit-transition: width 0.4s ease-in-out;
     transition: width 0.4s ease-in-out;
 }
@@ -64,4 +64,9 @@ input[type=text]:focus {
     right: 0px;
     border: 3px solid #000000;
     padding: 10px;
+}
+
+header {
+    background-color: #9b0505;
+    width: 550px;
 }
