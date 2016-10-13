@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Visitor Analysis and Persona</title>
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" type="text/css" href="/css/weatherscreen.css" media="screen">
+    <script>
+        /* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+        // Close the dropdown menu if the user clicks outside of it
+        window.onclick = function(event) {
+            if (!event.target.matches('.dropbtn')) {
+
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div id="wrapper">
+        <header>
+            <nav>
+                <div class="dropdown">
+                    <button onclick="myFunction()" class="dropbtn"> Button</button>
+                    <div id="myDropdown" class="dropdown-content">
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 2</a>
+                        <a href="#">Sign In/Up</a>
+                    </div>
+                    <img id="logo" alt="Logo" src="">
+                    <input id="search" type="text" name="search" placeholder="Search..">
+                </div>
+            </nav>
+
+        </header>
+        <main>
+            <h1>Franklin, ID Weather</h1>
+            <section id="Today">
+                <h2 id="todayhighlow">Today's High/Low</h2>
+                <figure>
+                    <img alt="Today's High and Low" src="">
+                </figure>
+            </section>
+            <section id="Hourly">
+                <h2>Hourly Forecast</h2>
+                <figure>
+                    <img alt="Hourly Forcast" src="">
+                </figure>
+            </section>
+
+        </main>
+        <footer>
+            <ul>
+                <li>&copy;2016</li>
+                <li>
+                    Mike Shoaf
+                </li>
+                <li>Last Updated: 30 Sept 2016
+                </li>
+            </ul>
+            <p> </p>
+        </footer>
+    </div>
+</body>
+
+</html>
