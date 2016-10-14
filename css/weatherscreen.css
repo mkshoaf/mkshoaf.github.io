@@ -1,6 +1,7 @@
 /* Dropdown Button */
 .dropbtn {
     background-color: #4CAF50;
+    object-position: left;
     color: white;
     padding: 16px;
     font-size: 16px;
@@ -44,7 +45,7 @@
 
 /* Logo */
 #logo {
-    align-content: center;
+    object-position: center;
 }
 
 /* Search engine */
@@ -56,7 +57,7 @@
 
 /* When the input field gets focus, change its width to 100% */
 input[type=text]:focus {
-    width: 100%;
+    width: 170px;
 }
 
 #search {
@@ -68,5 +69,5 @@ input[type=text]:focus {
 
 header {
     background-color: #9b0505;
-    width: 550px;
+    width: 400px;
 }
