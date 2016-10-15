@@ -9,7 +9,7 @@
     <title>Franklin, ID Weather</title>
     <script>
         /* When the user clicks on the button,
-                toggle between hiding and showing the dropdown content */
+        toggle between hiding and showing the dropdown content */
         function myFunction() {
             document.getElementById("myDropdown").classList.toggle("show");
         }
@@ -37,12 +37,15 @@
             <nav>
                 <div>
                     <button onclick="myFunction()" class="dropbtn"> Button</button>
-                    <div id="myDropdown" class="dropdown-content">
-                        <a href="#">Link 1</a>
-                        <a href="#">Link 2</a>
-                        <a href="#">Sign In/Up</a>
+                        <div id="myDropdown" class="dropdown-content">
+                            <input id="search" type="text" name="search" placeholder="Search..">
+                            <a href="#">Link 1</a>
+                            <a href="#">Link 2</a>
+                            <a href="#">Sign In/Up</a>
+                        </div>
+                    <div>
+                        <img class="logo" alt="logo" src="/images/weathercentral.jpg">
                     </div>
-                    <input id="search" type="text" name="search" placeholder="Search..">
                 </div>
             </nav>
         </header>

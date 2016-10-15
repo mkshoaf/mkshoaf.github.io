@@ -45,16 +45,16 @@
 .show {display:block;}
 
 /* Logo */
-#logo {
+.logo {
     display: block;
     margin: auto;
+    width: 25%;
+    padding: 5px 5px 5px 5px;
 }
 
 
 /* Search engine */
 input[type=text] {
-    position: absolute;
-    right: 10px;
     width: 130px;
     box-sizing: border-box;
     border: 2px solid #ccc;
@@ -63,7 +63,7 @@ input[type=text] {
     background-color: white;
     background-position: 10px 10px;
     background-repeat: no-repeat;
-    padding: 12px 20px 12px 40px;
+    padding: 12px 12px 12px 40px;
     -webkit-transition: width 0.4s ease-in-out;
     transition: width 0.4s ease-in-out;
 }
