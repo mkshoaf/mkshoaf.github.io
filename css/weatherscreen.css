@@ -1,7 +1,8 @@
 /* Dropdown Button */
 .dropbtn {
     background-color: #9b0505;
-    object-position: left;
+    position: absolute;
+    left: 10px;
     color: white;
     padding: 16px;
     font-size: 16px;
@@ -45,18 +46,21 @@
 
 /* Logo */
 #logo {
-    object-position: center;
+    display: block;
+    margin: auto;
 }
+
 
 /* Search engine */
 input[type=text] {
-    width: 120px;
+    position: absolute;
+    right: 10px;
+    width: 130px;
     box-sizing: border-box;
     border: 2px solid #ccc;
     border-radius: 4px;
     font-size: 16px;
     background-color: white;
-    background-image: url('searchicon.png');
     background-position: 10px 10px;
     background-repeat: no-repeat;
     padding: 12px 20px 12px 40px;
@@ -65,17 +69,10 @@ input[type=text] {
 }
 
 input[type=text]:focus {
-    width: 100%;
+    width: 130px;
 }
 
 #search {
-    object-position: right;
-    right: 0px;
     border: 3px solid #000000;
     padding: 10px;
-}
-
-header {
-    background-color: #9b0505;
-    width: auto;
 }
