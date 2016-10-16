@@ -2,93 +2,84 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" type="text/css" href="/css/weatherscreen.css" media="screen">
-    <title>Franklin, ID | Weather Central</title>
-    <script>
-        /* When the user clicks on the button,
-        toggle between hiding and showing the dropdown content */
-        function myFunction() {
-            document.getElementById("myDropdown").classList.toggle("show");
-        }
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width">
+	<link rel="stylesheet" type="text/css" href="/css/weatherscreen.css" media="screen">
+	<title>Franklin, ID | Weather Central</title>
+	<script>
+		/* When the user clicks on the button,
+		toggle between hiding and showing the dropdown content */
+		function myFunction() {
+			document.getElementById("myDropdown").classList.toggle("show");
+		}
 
-        // Close the dropdown menu if the user clicks outside of it
-        window.onclick = function (event) {
-            if (!event.target.matches('.dropbtn')) {
+		// Close the dropdown menu if the user clicks outside of it
+		window.onclick = function (event) {
+			if (!event.target.matches('.dropbtn')) {
 
-                var dropdowns = document.getElementsByClassName("dropdown-content");
-                var i;
-                for (i = 0; i < dropdowns.length; i++) {
-                    var openDropdown = dropdowns[i];
-                    if (openDropdown.classList.contains('show')) {
-                        openDropdown.classList.remove('show');
-                    }
-                }
-            }
-        }
-    </script>
+				var dropdowns = document.getElementsByClassName("dropdown-content");
+				var i;
+				for (i = 0; i < dropdowns.length; i++) {
+					var openDropdown = dropdowns[i];
+					if (openDropdown.classList.contains('show')) {
+						openDropdown.classList.remove('show');
+					}
+				}
+			}
+		}
+	</script>
 </head>
 
 <body>
-    <div id="wrapper">
-        <header>
-            <nav>
-                <div>
-                    <table>
-                        <tr>
-                            <th>
-                                <button onclick="myFunction()" class="dropbtn"> Menu </button>
-                                <div id="myDropdown" class="dropdown-content">
-                                    <a href="#">Greenville, SC</a>
-                                    <a href="#">Springfield, IL</a>
-                                    <a href="#">Sign In/Up</a>
-                                </div>
-                            </th>
-                            <th><img  class="logo" alt="logo" src="/images/weathercentral.jpg"></th>
-                            <th><input id="search" type="text" name="search" placeholder="Search.."></th>
-                        </tr>
-                    </table>
-                </div>
-            </nav>
-        </header>
-        <main>
-            <h1>Franklin, ID Weather</h1>
-            <section id="Today">
-                <h2 id="todayhighlow">Today's High/Low</h2>
-                <figure>
-                    <img alt="Today's High and Low" src="/images/todaysweather.jpg" height="300">
-                </figure>
-            </section>
-            <section id="Hourly">
-                <h2>Hourly Forecast</h2>
-                <figure>
-                    <img alt="Hourly Forcast" src="/images/hourlyweather.jpg" width="375">
-                </figure>
-            </section>
-        </main>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <footer>
-            <ul>
-                <li>&copy;2016</li>
-                <li>
-                    Mike Shoaf
-                </li>
-                <li>
-                    Last Updated: 15 Oct 2016
-                </li>
-            </ul>
-        </footer>
-    </div>
+	<div id="wrapper">
+		<header>
+			<nav>
+				<div>
+					<table>
+						<tr>
+							<th>
+								<button onclick="myFunction()" class="dropbtn"> Menu </button>
+								<div id="myDropdown" class="dropdown-content">
+									<a href="#">Greenville, SC</a>
+									<a href="#">Springfield, IL</a>
+									<a href="#">Sign In/Up</a>
+								</div>
+							</th>
+							<th><img  class="logo" alt="logo" src="/images/weathercentral.jpg"></th>
+							<th><input id="search" type="text" name="search" placeholder="Search.."></th>
+						</tr>
+					</table>
+				</div>
+			</nav>
+		</header>
+		<main>
+			<h1>Franklin, ID Weather</h1>
+			<section id="Today">
+				<h2 id="todayhighlow">Today's High/Low</h2>
+				<figure>
+					<img alt="Today's High and Low" src="/images/todaysweather.jpg" height="300">
+				</figure>
+			</section>
+			<section id="Hourly">
+				<h2>Hourly Forecast</h2>
+				<figure>
+					<img alt="Hourly Forcast" src="/images/hourlyweather.jpg" width="375">
+				</figure>
+			</section>
+		</main>
+		<footer>
+			<ul>
+				<li>&copy;2016</li>
+				<li>
+					Mike Shoaf
+				</li>
+				<li>
+					Last Updated: 15 Oct 2016
+				</li>
+			</ul>
+		</footer>
+	</div>
 </body>
 
 </html>
