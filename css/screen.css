@@ -13,3 +13,7 @@ p {
     margin: 100px;
     width: 400px;
 }
+
+body {
+    margin:0px;
+}
