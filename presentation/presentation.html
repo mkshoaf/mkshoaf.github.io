@@ -2,25 +2,164 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Exercise 1: Understanding specificity</title>
+    <title>Specificity Presentation</title>
     <link rel="stylesheet" href="presentation.css">
 </head>
 <body>
 <h1>
-    Exercise 1: Understanding specificity
+   Understanding Specificity
 </h1>
+    <h3>Specificity</h3>
+    <ul>
+        <li>
+            Spcificity is the means by which browsers decide which CSS property values are the most relevant to an element and, therefore, will be applied.
+        </li>
+        <li>
+        There are 4 types of specificity thatare added up
+            <ul>
+                <li>
+                Inline = a
+                </li>
+                <li>
+                    IDs = b
+                </li>
+                <li>
+                    Classes = c
+                </li>
+                <li>
+                    Types (elements) = d
+                </li>
+            </ul>
+        </li>
+        <li>
+        Added by this situation:
+            <ul>
+                <li>
+                a,b,c,d
+                </li>
+                <li>
+                A = 1000, B = 100, C = 10, D = 1
+                </li>
+            </ul>
+        </li>
+    </ul>
+    <h3>Types</h3>
+    <ul>
+        <li>
+            Types are classified as:
+                <ul>
+                    <li>Elements
+                        <ul>
+                            <li>
+                                i.e.: h2, p, etc
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+        </li>
+        <li>
+          Code in CSS:
+            <ul>
+                <li style="text-color:red;">
+                h2 { color:green; }
+                </li>
+            </ul>
+        </li>
+        <li>
+            This will change ALL h2 elements
+        </li>
+        <li>
+            Code in HTML will look like this:
+            <ul>
+                <li>
+                    <img alt="HTML Code" src="/presentation/html.jpg" width="300">
+                </li>
+            </ul>
+        </li>
+    </ul>
 <h2>
     This is a heading level 2
 </h2>
 <p>
-    Lorem ipsum dolor sit amet consect etuer adipi scing elit sed diam nonummy nibh euismod tinunt ut laoreet dolore magna aliquam erat volut.
+   This is type (element) example
 </p>
+<h3>Classes</h3>
+    <ul>
+        <li>
+            Will be:
+            <ul>
+                <li>
+                    class="..."
+                    <ul>
+                        <li>In this example it is coded as:
+                        <ul>
+                            <li style="text-color:red;">
+                            .news { color: blue;}
+                            </li>
+                        </ul>
+                        </li>
+                        <li>
+                        It pulls out anything with 'class="news"'
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+    </ul>
+<h2 class="news">
+    This is a heading level 2
+</h2>
+    <p>This is a class example</p>
+    <h3>Classes</h3>
+    <ul>
+        <li>
+            Will be:
+            <ul>
+                <li>
+                    id="..."
+                    <ul>
+                        <li>In this example it is coded as:
+                            <ul>
+                                <li style="text-color:red;">
+                                    #news { color: purple;}
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            It pulls out anything with 'id="news"'
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+    </ul>
+<h2 id="news">
+    This is a heading level 2
+</h2>
+    <p>This is an ID example</p>
+<h3>Inline</h3>
+    <ul>
+        <li>
+            Will be:
+            <ul>
+                <li>
+                    h2 ... style="color:red;
+                    <ul>
+                        <li>
+                            This is the most powerful out of the 4. It is also inefficient.
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+    </ul>
 <h2 class="news" id="news" style="color: red;">
     This is a heading level 2
 </h2>
-<p>
-    Lorem ipsum dolor sit amet consect etuer adipi scing elit sed diam nonummy nibh euismod tinunt ut laoreet dolore magna aliquam erat volut.
-</p>
+    <p>This is an Inline example</p>
+<h3 class="table">
+    This is a table of example code and how the specificity works with the values.
+</h3>
 <table>
     <thead>
         <tr>
