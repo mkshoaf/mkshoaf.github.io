@@ -232,4 +232,10 @@ footer {
     #moretoday {
         display: block;
     }
+
+    .franklin {
+        margin: 0px;
+        font-size: 23pt;
+
+    }
 }
