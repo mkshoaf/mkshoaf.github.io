@@ -178,6 +178,10 @@ footer {
         margin-right: auto;
     }
 
+    #hourlytableweb {
+        display: none;
+    }
+
     #moretoday {
         display: none;
     }
@@ -195,7 +199,8 @@ footer {
 
     th,td {
         text-align: center;
-        font-size: 21pt;
+        font-size: 16pt;
+        padding: 2px;
     }
     #logo {
         font-size: 36pt;
@@ -223,10 +228,14 @@ footer {
         display: block;
     }
 
-    #hourlytable {
+    #hourlyweb {
         text-align: center;
         margin-left: auto;
         margin-right: auto;
+    }
+
+    #hourlytable {
+        display: none;
     }
 
     #moretoday {
