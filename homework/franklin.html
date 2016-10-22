@@ -36,7 +36,6 @@
         <header>
             <nav>
                 <div>
-
                     <button onclick="myFunction()" class="dropbtn"> Menu </button>
                     <div id="myDropdown" class="dropdown-content">
                         <a href="franklin.html">Franklin, ID</a>
@@ -44,28 +43,57 @@
                         <a href="springfield.html">Springfield, IL</a>
                         <a href="#">Sign In/Up</a>
                     </div>
-                    <img  class="logo" alt="logo" src="/images/weathercentral.jpg">
                     <input id="search" type="text" name="search" placeholder="Search..">
+                </div>
+                <div>
+                    <h1 id="logo">Weather Central</h1>
                 </div>
             </nav>
         </header>
         <main>
             <h1>Franklin, ID Weather</h1>
-            <section id="Today">
-                <h2 id="todayhighlow">Today's High/Low</h2>
-                <figure>
-                    <img alt="Today's High and Low" src="/images/todaysweather.jpg" height="300">
-                </figure>
-            </section>
-            <section id="Hourly">
+            <div class="today">
+                <section id="Today">
+                    <h2 id="todayhighlow">Today</h2>
+                    <p>High: 90&deg;</p>
+                    <p>Low: 66&deg;</p>
+                    <p>Wind: 1-5 mph Southwest</p>
+                    <p>Chance of Precipitation: 0&#37;</p>
+                </section>
+                <section id="forecast">
+                    <h2>Today will be:</h2>
+                    <img id="sun" alt="Sunny" src="/images/sunny.png">
+                    <p>Sunny</p>
+                </section>
+            </div>
+            <div class="hourly">
+            <article id="Hourly">
                 <h2>Hourly Forecast</h2>
-                <figure>
-                    <img alt="Hourly Forcast" src="/images/hourlyweather.jpg" width="300">
-                </figure>
-            </section>
+                <table id="Hourly">
+                    <tr>
+                        <th>6am</th>
+                        <th>8am</th>
+                        <th>10am</th>
+                        <th>12pm</th>
+                        <th>2pm</th>
+                        <th>4pm</th>
+                        <th>6pm</th>
+                    </tr>
+                    <tr>
+                        <td>69&deg;</td>
+                        <td>74&deg;</td>
+                        <td>79&deg;</td>
+                        <td>84&deg;</td>
+                        <td>88&deg;</td>
+                        <td>90&deg;</td>
+                        <td>83&deg;</td>
+                    </tr>
+                </table>
+            </article>
+            </div>
         </main>
         <footer>
-            <ul>
+            <ul id="footer">
                 <li>&copy;2016</li>
                 <li>
                     Mike Shoaf
