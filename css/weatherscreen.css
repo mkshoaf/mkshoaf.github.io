@@ -120,14 +120,17 @@ th,td {
     text-align: center;
 }
 
-#hourlytable {
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-}
 
 footer {
     padding: 1em;
+}
+
+.hourly {
+    display: none;
+}
+
+#moretoday {
+    display: none;
 }
 
 @media screen and (min-width:450px) {
@@ -166,16 +169,28 @@ footer {
 
     .hourly {
         text-align: center;
+        display: block;
+    }
+
+    #hourlytable {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #moretoday {
+        display: none;
     }
 }
 
-@media screen and (min-width:950px) {
+@media screen and (min-width:1024px) {
     h2 {
         font-size: 28pt;
     }
 
     p {
         font-size: 21pt;
+        margin: 2px;
     }
 
     th,td {
@@ -189,7 +204,7 @@ footer {
         position: relative;
         left: 10px;
         width: 45%;
-        margin:1em 1em 6em 1em;
+        margin: 1em 1em 6em 1em;
     }
 
     #sun {
@@ -199,11 +214,22 @@ footer {
     #Today {
         position: absolute;
         right: 10px;
-        margin:1em 1em 6em 1em;
+        margin: 0em;
         width: 45%
     }
 
     .hourly {
         text-align: center;
+        display: block;
+    }
+
+    #hourlytable {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #moretoday {
+        display: block;
     }
 }
