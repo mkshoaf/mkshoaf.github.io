@@ -1,8 +1,10 @@
 /* Dropdown Button */
 .dropbtn {
     background-color: #9b0505;
-    margin: 1em;
     color: black;
+    position: relative;
+    margin: 1em;
+    left: 20px;
     padding: 16px;
     font-size: 16px;
     border: solid;
@@ -45,8 +47,10 @@
 
 /* Search engine */
 input[type=text] {
-    width: 30%;
+    position: absolute;
+    right: 10px;
     margin: 1em;
+    width: 25%;
     box-sizing: border-box;
     border: 2px solid #ccc;
     border-radius: 4px;
@@ -62,12 +66,7 @@ input[type=text] {
 }
 
 input[type=text]:focus {
-    width: 35%;
-}
-
-div.tools {
-    display: flex;
-    justify-content: space-between;
+    width: 30%;
 }
 
 /* Logo */
@@ -90,8 +89,6 @@ body{
 
 h1 {
     text-align: center;
-    display: flex;
-    justify-content: center;
 }
 
 h2 {
@@ -115,13 +112,6 @@ th,td {
     display: block;
 }
 
-div.weathersum {
-    display: flex;
-    justify-content: space-around;
-    flex-flow: row-reverse;
-    flex-wrap: wrap;
-}
-
 #forecast {
     text-align: center;
 }
@@ -133,9 +123,6 @@ div.weathersum {
 
 footer {
     padding: 1em;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
 }
 
 .hourly {
@@ -161,7 +148,7 @@ footer {
     #logo {
         font-size: 33pt;
     }
-/*
+
     #forecast {
         position: relative;
         left: 10px;
@@ -169,15 +156,15 @@ footer {
         margin:1em 1em 6em 1em;
     }
 
-    #Today {
-    position: absolute;
-    right: 10px;
-    margin:1em 1em 6em 1em;
-    width: 45%
-}
-*/
     #sun, #storm {
         width: 50%;
+    }
+
+    #Today {
+        position: absolute;
+        right: 10px;
+        margin:1em 1em 6em 1em;
+        width: 45%
     }
 
     .hourly {
@@ -218,7 +205,6 @@ footer {
     #logo {
         font-size: 36pt;
     }
-/*
     #forecast {
         position: relative;
         left: 10px;
@@ -226,16 +212,15 @@ footer {
         margin: 1em 1em 6em 1em;
     }
 
-    #Today {
-    position: absolute;
-    right: 10px;
-    margin: 0em;
-    width: 45%
-}
-
-*/
     #sun, #storm {
         width: 50%;
+    }
+
+    #Today {
+        position: absolute;
+        right: 10px;
+        margin: 0em;
+        width: 45%
     }
 
     .hourly {
