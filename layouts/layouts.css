@@ -13,10 +13,19 @@ body{
     padding: 0;
 }
 
+#page-header{
+    display: flex;
+    justify-content: center;
+}
+
 #wrapper {
     display: flex;
-    flex-direction: column-reverse;
+    flex-flow: column wrap;
+}
 
+div.content {
+    display: flex;
+    justify-content: center;
 }
 
 /*
