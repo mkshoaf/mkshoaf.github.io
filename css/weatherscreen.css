@@ -120,6 +120,7 @@ div.weathersum {
     justify-content: space-around;
     flex-flow: row-reverse;
     flex-wrap: wrap;
+    padding: 5px;
 }
 
 #forecast {
