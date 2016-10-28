@@ -178,6 +178,10 @@ footer {
     width: 45%
 }
 */
+    div.weathersum {
+        display: flex;
+        flex-flow: row-reverse;
+    }
     #sun, #storm, #pcloudy {
         width: 50%;
     }
