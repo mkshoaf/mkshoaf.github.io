@@ -178,7 +178,7 @@ footer {
     width: 45%
 }
 */
-    #sun, #storm {
+    #sun, #storm, #pcloudy {
         width: 50%;
     }
 
@@ -236,7 +236,7 @@ footer {
 }
 
 */
-    #sun, #storm {
+    #sun, #storm, #pcloudy {
         width: 50%;
     }
 
