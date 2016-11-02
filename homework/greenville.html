@@ -33,23 +33,7 @@
 
     <body>
         <div id="wrapper">
-            <header>
-                <nav>
-                    <div class="tools">
-                        <button onclick="myFunction()" class="dropbtn"> Menu </button>
-                        <div id="myDropdown" class="dropdown-content">
-                            <a href="franklin.html">Franklin, ID</a>
-                            <a href="greenville.html">Greenville, SC</a>
-                            <a href="springfield.html">Springfield, IL</a>
-                            <a href="#">Sign In/Up</a>
-                        </div>
-                        <input id="search" type="text" name="search" placeholder="Search..">
-                    </div>
-                    <div>
-                        <h2 id="logo">Weather Central</h2>
-                    </div>
-                </nav>
-            </header>
+            <header id="wheader"></header>
             <main>
                 <h1>Greenville, SC Weather</h1>
                 <div class="weathersum">
@@ -140,21 +124,9 @@
                     </article>
                 </div>
             </main>
-            <footer>
-                <ul id="footer">
-                    <li>&copy;2016</li>
-                    <li>
-                        Mike Shoaf
-                    </li>
-                    <li>
-                        Last Updated: 15 Oct 2016
-                    </li>
-                </ul>
-                <p>Below are my wireframe sketches. Modifications have been made to help site appearance.</p>
-                <img alt="Mobile Screen Wireframe Scan" src="/images/androidlargerescan.jpg" width="300">
-                <img alt="Medium Wireframe Scan" src="/images/ipad.jpg" width="300">
-                <img alt="Large Wireframe Scan" src="/images/web.jpg" width="300">
-            </footer>
+            <footer id="wfooter"></footer>
+            <script src="https://code.jquery.com/jquery-3.1.1.js" integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous"></script>
+            <script src="wmodules.js"></script>
         </div>
     </body>
 
