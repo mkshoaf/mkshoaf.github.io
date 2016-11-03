@@ -109,8 +109,8 @@ th,td {
     font-size: 16pt;
 }
 
-#sun, #storm {
-    width: 15%;
+#sun, #storm, #pcloud {
+    width: 35%;
     margin-left: auto;
     margin-right: auto;
     display: block;
@@ -119,12 +119,13 @@ th,td {
 div.weathersum {
     display: flex;
     justify-content: space-around;
-    flex-flow: row-reverse;
-    flex-wrap: wrap;
+    flex-flow: row-reverse wrap;
     padding: 20px;
 }
 
 #forecast {
+    display: flex;
+    flex-flow: column wrap;
     text-align: center;
 }
 
@@ -141,6 +142,20 @@ footer {
 }
 
 .hourly {
+    display: flex;
+    justify-content: center;
+}
+
+#web {
+    display: none;
+}
+
+#mhourly {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+#hourlytable {
     display: none;
 }
 
@@ -183,19 +198,17 @@ footer {
         flex-flow: row-reverse;
     }
 
-    #sun, #storm, #pcloudy {
+    #sun, #storm, #pcloud {
         width: 50%;
     }
 
-    .hourly {
-        text-align: center;
-        display: block;
+    #hourlytable {
+        display: flex;
+        justify-content: center;
     }
 
-    #hourlytable {
-        text-align: center;
-        margin-left: auto;
-        margin-right: auto;
+    #mhourly {
+        display: none;
     }
 
     #web {
@@ -241,20 +254,17 @@ footer {
 }
 
 */
-    #sun, #storm, #pcloudy {
+    #sun, #storm, #pcloud {
         width: 50%;
     }
 
-    .hourly {
-        text-align: center;
-        display: block;
+    #mhourly {
+        display: none;
     }
 
     #web {
-        text-align: center;
-        margin-left: auto;
-        margin-right: auto;
-        display: inline-block;
+        display: flex;
+        justify-content: center;
     }
 
     #hourlytable {
@@ -262,12 +272,12 @@ footer {
     }
 
     #moretoday {
-        display: block;
+        display: flex;
+        flex-flow: column wrap;
     }
 
     .franklin, .springfield, .greenville {
         margin: 0px;
         font-size: 23pt;
-
     }
 }
