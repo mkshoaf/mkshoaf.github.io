@@ -13,17 +13,42 @@
 
                 var inputFields = $('input[type="text"]');
 
-                if (inputFields.css('background-color') === 'rgb(255,0,0)') {
+                if (inputFields.css('background-color') === 'rgb(255, 0, 0)') {
                     //Set background color to white
                     inputFields.css('background-color', 'rgb(255, 255, 255)');
                 } else {
-                    // Set background color to red
+                    //Set background color to red
                     inputFields.css('background-color', 'rgb(255, 0, 0)');
                 }
             }
 
             $('#ReqAQuoteBtn').click(toggleStyle);
-        });
+        })
+
+        $(function () {
+
+            $('.coreValues').append("<li><strong>This is brand new !!</strong></li>");
+
+            $("<li><strong>This is also great !!</strong></li>").appendTo(".coreValues");
+
+            $('.coreValues').prepend("<li><strong>This is brand new !!</strong></li>");
+
+            $("<li><strong>This is also great !!</strong></li>").prependTo(".coreValues");
+
+        })
+
+        $(function () {
+
+            var nameVal = $('input[name="nameVal"]');
+
+            function FillEmpty() {
+                if (nameVal.val() == '') {
+                    nameVal.val('John Doe');
+                }
+            }
+
+            $('#ReqAQuoteBtn').click(FillEmpty);
+        })
     </script>
 </head>
 
@@ -35,7 +60,7 @@
             <div class="logo" id="alcoveLogo"></div>
             <div class="navbar">
                 <ul class="navigation">
-                    <li><a href="#">About Us</a></li>
+                    <li><a href="">About Us</a></li>
                     <li><a href="#">Services</a></li>
                     <li><a href="#">Catalog</a></li>
                     <li><a href="#">Support</a></li>
@@ -43,6 +68,9 @@
                     <li><a href="#">Contact Us</a></li>
                 </ul>
             </div>
+            <nav>
+                <p style="color:red;"> <a href="animatedMenuBegin.htm">Animated Menu</a> | <a href="DropDownMenuBegin.htm">Drop Down Menu</a> | <a href="fruitBasketBegin.htm">Fruit Basket</a> | <a href="InsertHTMLBegin.htm">Insert HTML</a> | <a href="toggleButtonBegin.htm">Toggle Button</a></p>
+            </nav>
         </div>
         <!-- Content Div -->
         <div class="content">
@@ -139,9 +167,14 @@
             </div>
         </div>
 
-        <div class="footer">
-            <h5>© Alcove Digital Systems | <a href="#">Terms of Use</a></h5>
-        </div>
+
+
+        <footer>
+            <div class="footer">
+                <h5>© Alcove Digital Systems | <a href="#">Terms of Use</a></h5>
+            </div>
+        </footer>
+        <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
     </div>
 </body>
 
