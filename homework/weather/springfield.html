@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" type="text/css" href="/css/weatherscreen.css" media="screen">
+    <title>Springfield, IL | Weather Central</title>
+    <script>
+        /* When the user clicks on the button,
+                        toggle between hiding and showing the dropdown content */
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+        // Close the dropdown menu if the user clicks outside of it
+        window.onclick = function (event) {
+            if (!event.target.matches('.dropbtn')) {
+
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div id="wrapper">
+        <header id="wheader"></header>
+        <main>
+            <noscript>JavaScript is not enabled. For navigation visit the <a href="sitemap.html">Site Map</a></noscript>
+            <h1>Springfield, IL Weather</h1>
+            <div class="weathersum">
+                <section id="Today">
+                    <h2 id="todayhighlow">Today</h2>
+                    <p>High: 77&deg;</p>
+                    <p>Low: 48&deg;</p>
+                    <p>Wind: 5-15 mph Northwest</p>
+                    <p>Chance of Precipitation: 0&#37;</p>
+                    <section id="moretoday">
+                        <h3 class="springfield">Information about Springfield:</h3>
+                        <p>Longitude: -89.670832</p>
+                        <p>Latitude: 39.763968</p>
+                        <p>Zip: 62701</p>
+                    </section>
+                </section>
+                <section id="forecast">
+                    <h2>Today will be:</h2>
+                    <img id="pcloud" alt="Partly Cloudy" src="/images/sky.png">
+                    <p>Partly Cloudy</p>
+                </section>
+            </div>
+            <div class="hourly">
+                <article id="Hourly">
+                    <h2>Hourly Forecast</h2>
+                    <table id="mhourly">
+                        <tr>
+                            <th>6am</th>
+                            <th>9am</th>
+                            <th>12pm</th>
+                            <th>3pm</th>
+                            <th>6pm</th>
+                        </tr>
+                        <tr>
+                            <td>48&deg;</td>
+                            <td>54&deg;</td>
+                            <td>62&deg;</td>
+                            <td>70&deg;</td>
+                            <td>76&deg;</td>
+                        </tr>
+                    </table>
+                    <table id="hourlytable">
+                        <tr>
+                            <th>6am</th>
+                            <th>8am</th>
+                            <th>10am</th>
+                            <th>12pm</th>
+                            <th>2pm</th>
+                            <th>4pm</th>
+                            <th>6pm</th>
+                        </tr>
+                        <tr>
+                            <td>48&deg;</td>
+                            <td>52&deg;</td>
+                            <td>57&deg;</td>
+                            <td>62&deg;</td>
+                            <td>67&deg;</td>
+                            <td>90&deg;</td>
+                            <td>75&deg;</td>
+                        </tr>
+                    </table>
+                    <table id="web">
+                        <tr>
+                            <th>6am</th>
+                            <th>7am</th>
+                            <th>8am</th>
+                            <th>9am</th>
+                            <th>10am</th>
+                            <th>11am</th>
+                            <th>12pm</th>
+                            <th>1pm</th>
+                            <th>2pm</th>
+                            <th>3pm</th>
+                            <th>4pm</th>
+                            <th>5pm</th>
+                            <th>6pm</th>
+                            <th>7pm</th>
+                            <th>8pm</th>
+                            <th>9pm</th>
+                            <th>10pm</th>
+                            <th>11pm</th>
+                        </tr>
+                        <tr>
+                            <td>48&deg;</td>
+                            <td>49&deg;</td>
+                            <td>52&deg;</td>
+                            <td>54&deg;</td>
+                            <td>57&deg;</td>
+                            <td>59&deg;</td>
+                            <td>62&deg;</td>
+                            <td>65&deg;</td>
+                            <td>67&deg;</td>
+                            <td>70&deg;</td>
+                            <td>75&deg;</td>
+                            <td>77&deg;</td>
+                            <td>76&deg;</td>
+                            <td>74&deg;</td>
+                            <td>69&deg;</td>
+                            <td>62&deg;</td>
+                            <td>58&deg;</td>
+                            <td>49&deg;</td>
+                        </tr>
+                    </table>
+                </article>
+            </div>
+        </main>
+        <footer id="wfooter"></footer>
+        <script src="https://code.jquery.com/jquery-3.1.1.js" integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous"></script>
+        <script src="/javascript/wmodules.js"></script>
+    </div>
+</body>
+
+</html>
