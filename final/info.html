@@ -1,0 +1,108 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Countertenors</title>
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" type="text/css" media="screen" href="/css/ctscreen.css">
+    <script>
+        /* When the user clicks on the button,
+                                                toggle between hiding and showing the dropdown content */
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+        // Close the dropdown menu if the user clicks outside of it
+        window.onclick = function (event) {
+            if (!event.target.matches('.dropbtn')) {
+
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div id="wrapper">
+        <header id="ctpage-header">
+            <nav id="ctpage-nav">
+                <button onclick="myFunction()" class="dropbtn"> Menu </button>
+                <div id="myDropdown" class="dropdown-content">
+                    <a href="countertenors.html"> Famous Countertenors</a>
+                    <a href="info.html">About Countertenors</a>
+                    <a href="music.html">Music Repetoire</a>
+                    <a href="opportunities.html">Opportunities to Perform</a>
+                    <a href="about.html"> About Me</a>
+                </div>
+            </nav>
+        </header>
+        <main id="ctpage-main">
+            <h1>What are Countertenors?</h1>
+            <section class="daniels">
+                <ul>
+                    <li>David Daniels</li>
+                    <ul>
+                        <li>Age</li>
+                        <li>Location</li>
+                        <li>Education</li>
+                        <ul>
+                            <li></li>
+                        </ul>
+                        <li>Background</li>
+                        <ul>
+                            <li></li>
+                        </ul>
+                    </ul>
+                </ul>
+            </section>
+            <section class="philippe">
+                <ul>
+                    <li>Philippe Jaroussky</li>
+                    <ul>
+                        <li>Age</li>
+                        <li>Location</li>
+                        <li>Education</li>
+                        <ul>
+                            <li></li>
+                        </ul>
+                        <li>Background</li>
+                        <ul>
+                            <li></li>
+                        </ul>
+                    </ul>
+                </ul>
+            </section>
+            <section class="hansen">
+                <ul>
+                    <li>David Hansen</li>
+                    <ul>
+                        <li>Age</li>
+                        <li>Location</li>
+                        <li>Education</li>
+                        <ul>
+                            <li></li>
+                        </ul>
+                        <li>Background</li>
+                        <ul>
+                            <li></li>
+                        </ul>
+                    </ul>
+                </ul>
+            </section>
+        </main>
+        <footer id="ctpage-footer">
+
+        </footer>
+    </div>
+</body>
+
+</html>
