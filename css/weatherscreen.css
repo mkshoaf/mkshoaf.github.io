@@ -65,7 +65,7 @@
 
 /* Search engine */
 
-input[type=text] {
+input[type=search] {
     width: 30%;
     margin: 1em;
     box-sizing: border-box;
@@ -82,8 +82,13 @@ input[type=text] {
     padding: 10px;
 }
 
-input[type=text]:focus {
+input[type=search]:focus {
     width: 35%;
+}
+
+form {
+    display: flex;
+    justify-content: center;
 }
 
 div.tools {
@@ -195,6 +200,20 @@ footer {
     padding: 0;
     background-color: #000;
     color: #fff;
+}
+
+#weatherData {
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    align-items: center;
+}
+
+#current_conditions {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
 }
 
 

@@ -1,0 +1,79 @@
+<!doctype html>
+
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" type="text/css" href="/css/weatherscreen.css" media="screen">
+    <title id="titleCity"> Search | Weather Central</title>
+    <script>
+        /* When the user clicks on the button, toggle between hiding and showing the dropdown content */
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+        // Close the dropdown menu if the user clicks outside of it
+        window.onclick = function (event) {
+            if (!event.target.matches('.dropbtn')) {
+
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<!--  *********************************************
+* Who Did You Collaborate With On This Assessment?
+* 1. Mike Shoaf
+* 2. Payton Smith ******************************************** -->
+
+<body>
+    <div id="wrapper">
+        <header id="curheader"></header>
+        <main>
+            <noscript><a href="/weather/sitemap.html">JavaScript is not enabled, For navigation click to see the Site Map</a>
+            </noscript>
+
+            <div>
+                <section class='current' id='weatherData'>
+                    <div id="cover">
+                        <div id="status">Weather info will be displayed here</div>
+                    </div>
+                    <ul id='current_conditions'>
+                        <li>
+                            <h1 id='cityDisplay'></h1></li>
+                        <li id='currentTemp'></li>
+                        <li id='highTemp'></li>
+                        <li id='lowTemp'></li>
+                    </ul>
+                    <figure id='iconFig'></figure>
+                </section>
+                <h2>Search Your City</h2>
+                <form method="get" action="//autocomplete.wunderground.com/aq" id="srchfrm">
+                    <input type="search" name="query" id="query" placeholder="Search...">
+                    <input type="submit" name="submit" value="Search" id="send">
+                </form>
+                <h2 id='resultsHeading'>Search Results</h2>
+                <section id="searchResults">
+                    <h2></h2>
+                </section>
+            </div>
+        </main>
+        <footer id="curfooter"></footer>
+        <img src="/jsonweather-html/images/wulogo.png" alt="Weatherunderground logo" title="All weather data provided by WeatherUnderground.com">
+        <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+        <script src="/javascript/search.js"></script>
+        <script src="/javascript/curmodules.js"></script>
+    </div>
+</body>
+
+
+
+</html>
