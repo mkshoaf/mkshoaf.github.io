@@ -8,8 +8,7 @@
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" type="text/css" media="screen" href="/css/ctscreen.css">
     <script>
-        /* When the user clicks on the button,
-                                                                        toggle between hiding and showing the dropdown content */
+        /* When the user clicks on the button, toggle between hiding and showing the dropdown content */
         function myFunction() {
             document.getElementById("myDropdown").classList.toggle("show");
         }
@@ -33,7 +32,8 @@
 
 <body>
     <div id="wrapper">
-        <header id="page-header">
+        <noscript>JavaScript is not enabled. For navigation visit the <a href="sitemap.html">Site Map</a></noscript>
+        <header id="ctpage-header">
             <nav id="page-nav">
                 <button onclick="myFunction()" class="dropbtn"> Menu </button>
                 <div id="myDropdown" class="dropdown-content">
@@ -45,7 +45,7 @@
                 </div>
             </nav>
         </header>
-        <main id="mpage-main">
+        <main id="ctpage-main">
             <h1>Music Repetoire</h1>
             <section class="repetoire">
                 <h2>Music for a countertenor</h2>
@@ -103,9 +103,11 @@
                 </ul>
             </section>
         </main>
-        <footer id="page-footer">
+        <footer id="ctpage-footer">
 
         </footer>
+        <script src="https://code.jquery.com/jquery-3.1.1.js" integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous"></script>
+        <script src="/javascript/ctmodules.js"></script>
     </div>
 </body>
 

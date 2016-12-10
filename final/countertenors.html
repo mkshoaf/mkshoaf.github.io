@@ -8,8 +8,7 @@
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" type="text/css" media="screen" href="/css/ctscreen.css">
     <script>
-        /* When the user clicks on the button,
-                                        toggle between hiding and showing the dropdown content */
+        /* When the user clicks on the button, toggle between hiding and showing the dropdown content */
         function myFunction() {
             document.getElementById("myDropdown").classList.toggle("show");
         }
@@ -33,6 +32,7 @@
 
 <body>
     <div id="wrapper">
+        <noscript>JavaScript is not enabled. For navigation visit the <a href="sitemap.html">Site Map</a></noscript>
         <header id="ctpage-header">
             <nav id="ctpage-nav">
                 <button onclick="myFunction()" class="dropbtn"> Menu </button>
@@ -48,14 +48,16 @@
         <main id="ctpage-main">
             <h1>Famous Countertenors</h1>
             <section class="daniels">
+                <img alt="David Daniels" src="/images/david.jpg">
                 <ul>
                     <li>David Daniels</li>
                     <ul>
-                        <li>Age</li>
-                        <li>Location</li>
-                        <li>Education</li>
+                        <li>Age: 50</li>
+                        <li>Location: Michigan, USA</li>
+                        <li>Education:</li>
                         <ul>
-                            <li></li>
+                            <li>Bachelor of Music at Cincinnati College Conservatory of Music</li>
+                            <li>Master of Music at University of Michigan School of Music</li>
                         </ul>
                         <li>Background</li>
                         <ul>
@@ -65,14 +67,15 @@
                 </ul>
             </section>
             <section class="philippe">
+                <img alt="David Daniels" src="/images/philippe.jpg">
                 <ul>
                     <li>Philippe Jaroussky</li>
                     <ul>
-                        <li>Age</li>
-                        <li>Location</li>
-                        <li>Education</li>
+                        <li>Age: 38</li>
+                        <li>Location: Maisons-Laffitte, France</li>
+                        <li>Education:</li>
                         <ul>
-                            <li></li>
+                            <li>Diploma from Conservatoire de Paris</li>
                         </ul>
                         <li>Background</li>
                         <ul>
@@ -82,11 +85,12 @@
                 </ul>
             </section>
             <section class="hansen">
+                <img alt="David Daniels" src="/images/hansen.jpg">
                 <ul>
                     <li>David Hansen</li>
                     <ul>
-                        <li>Age</li>
-                        <li>Location</li>
+                        <li>Age: 35</li>
+                        <li>Location: Sydney, Australia</li>
                         <li>Education</li>
                         <ul>
                             <li></li>
@@ -102,6 +106,8 @@
         <footer id="ctpage-footer">
 
         </footer>
+        <script src="https://code.jquery.com/jquery-3.1.1.js" integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous"></script>
+        <script src="/javascript/ctmodules.js"></script>
     </div>
 </body>
 
