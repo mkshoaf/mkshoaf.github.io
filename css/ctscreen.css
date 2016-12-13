@@ -59,3 +59,183 @@
 .show {
     display: block;
 }
+
+
+/*body {
+background-image: url("/images/background.jpg");
+background-position: right,
+left;
+background-repeat: no-repeat,
+no-repeat;
+background-size: contain,
+cover;
+
+}*/
+
+h1 {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+h2 {
+    font-size: 21pt;
+    text-align: center;
+}
+
+h3 {
+    font-size: 18pt;
+    margin: 0;
+}
+
+p {
+    font-size: 16pt;
+}
+
+li {
+    font-size: 16pt;
+}
+
+div.king {
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row-reverse wrap;
+    padding: 20px;
+}
+
+#kingpic {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+#kinginfo {
+    display: flex;
+    flex-flow: column wrap;
+    text-align: center;
+    padding: 10px;
+}
+
+div.chant {
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row-reverse wrap;
+    padding: 20px;
+}
+
+#chantpic {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+#chantinfo {
+    display: flex;
+    flex-flow: column wrap;
+    text-align: center;
+    padding: 10px;
+}
+
+div.messiah {
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row-reverse wrap;
+    padding: 20px;
+}
+
+#messiahinfo {
+    display: flex;
+    flex-flow: column wrap;
+    text-align: center;
+    padding: 10px;
+}
+
+#ctpage-footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+div.daniels {
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row-reverse wrap;
+    padding: 20px;
+}
+
+#danielspic {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+#danielsinfo {
+    display: flex;
+    flex-flow: column;
+    align-content: flex-start;
+    padding: 10px;
+}
+
+div.philippe {
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row-reverse wrap;
+    padding: 20px;
+}
+
+#philippepic {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+#philippeinfo {
+    display: flex;
+    flex-flow: column;
+    align-content: flex-start;
+    padding: 10px;
+}
+
+div.hansen {
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row-reverse wrap;
+    padding: 20px;
+}
+
+#hansenpic {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+#hanseninfo {
+    display: flex;
+    flex-flow: column;
+    align-content: flex-start;
+    padding: 10px;
+}
+
+@media screen and (min-width:460px) {
+    div.king {
+        display: flex;
+        justify-content: space-around;
+        flex-flow: row;
+    }
+    div.chant {
+        display: flex;
+        justify-content: space-around;
+        flex-flow: row;
+    }
+    div.daniels {
+        display: flex;
+        justify-content: space-around;
+        flex-flow: row;
+    }
+    div.philippe {
+        display: flex;
+        justify-content: space-around;
+        flex-flow: row;
+    }
+    div.hansen {
+        display: flex;
+        justify-content: space-around;
+        flex-flow: row;
+    }
+}
+
+@media screen and (min-width:1024px) {}
