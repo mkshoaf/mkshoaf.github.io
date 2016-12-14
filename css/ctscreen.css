@@ -247,6 +247,37 @@ div.countertenor {
     flex-flow: column;
 }
 
+div.types {
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row-reverse wrap;
+    padding: 10px;
+}
+
+.Alto {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+
+.Sopranist {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+
+.Tenor {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+
+.Castrato {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+
 video {
     width: 75%;
 }
@@ -285,5 +316,35 @@ video {
         justify-content: space-around;
         flex-flow: row;
         align-content: center;
+    }
+    div.types {
+        display: flex;
+        justify-content: space-around;
+        flex-flow: row wrap;
+        padding: 10px;
+    }
+    .Alto {
+        display: flex;
+        flex-flow: column;
+        justify-content: flex-start;
+        width: 45%;
+    }
+    .Sopranist {
+        display: flex;
+        flex-flow: column;
+        justify-content: flex-start;
+        width: 40%;
+    }
+    .Tenor {
+        display: flex;
+        flex-flow: column;
+        justify-content: flex-start;
+        width: 45%;
+    }
+    .Castrato {
+        display: flex;
+        flex-flow: column;
+        justify-content: flex-start;
+        width: 45%;
     }
 }
