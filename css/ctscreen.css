@@ -60,6 +60,11 @@
     display: block;
 }
 
+#logo {
+    font-size: 40pt;
+    text-align: center;
+}
+
 body {
     background-color: bisque;
 }
@@ -276,6 +281,63 @@ div.types {
     display: flex;
     flex-flow: column;
     justify-content: center;
+}
+
+#project {
+    display: flex;
+    flex-flow: column;
+    align-content: center;
+    text-align: ;
+    width: 75%;
+    margin: auto;
+}
+
+#audience {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    width: 75%;
+    margin: auto;
+}
+
+#persona {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    width: 75%;
+    margin: auto;
+}
+
+#pages {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    width: 75%;
+    margin: auto;
+}
+
+#wireframe {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    width: 75%;
+    margin: auto;
+}
+
+#wireframe {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    width: 75%;
+    margin: auto;
+}
+
+#usability {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    width: 75%;
+    margin: auto;
 }
 
 video {
