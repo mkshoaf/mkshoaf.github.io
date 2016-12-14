@@ -60,17 +60,9 @@
     display: block;
 }
 
-
-/*body {
-background-image: url("/images/background.jpg");
-background-position: right,
-left;
-background-repeat: no-repeat,
-no-repeat;
-background-size: contain,
-cover;
-
-}*/
+body {
+    background-color: bisque;
+}
 
 h1 {
     text-align: center;
@@ -210,6 +202,55 @@ div.hansen {
     padding: 10px;
 }
 
+div.me {
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row-reverse wrap;
+    padding: 20px;
+}
+
+#mepic {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+#meinfo {
+    display: flex;
+    flex-flow: column;
+    align-content: flex-start;
+    padding: 20px;
+}
+
+#mevideo {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+div.countertenor {
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row-reverse wrap;
+    padding: 10px;
+}
+
+#define {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#history {
+    display: flex;
+    flex-flow: column;
+}
+
+video {
+    width: 75%;
+}
+
 @media screen and (min-width:460px) {
     div.king {
         display: flex;
@@ -238,4 +279,11 @@ div.hansen {
     }
 }
 
-@media screen and (min-width:1024px) {}
+@media screen and (min-width:1024px) {
+    div.me {
+        display: flex;
+        justify-content: space-around;
+        flex-flow: row;
+        align-content: center;
+    }
+}
